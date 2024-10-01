@@ -5,26 +5,8 @@ import {motion, useMotionValueEvent, useScroll} from 'framer-motion';
 import { Button } from './ui/button'
 import LoginButton from './auth/login-button'
 import { useState } from 'react';
-import { MenuIcon } from 'lucide-react';
 import MobileNav from './mobile-nav';
-
-const navLinks = [
-    {
-        id: 1,
-        name: 'About',
-        href:'#about',
-    },
-    {
-        id:2,
-        name: 'Features',
-        href: '#features',
-    },
-    {
-        id:3,
-        name:'Pricing',
-        href:'#pricing',
-    },
-]
+import navLinks from '@/constants';
 
 const NavigationBar = () => {
     const [activeLink,setActiveLink] = useState('home');
