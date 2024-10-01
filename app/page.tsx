@@ -8,8 +8,10 @@ const manrope = Manrope({weight:['300','400','700'],subsets:['latin']});
 
 export default function Home() {
   return (
-    <div>
-      Hero
+    <div className="mt-[100px]">
+      <div className="h-screen">
+          Hero
+      </div>
     </div>
   );
 }
