@@ -35,22 +35,22 @@ const NavigationBar = () => {
             <Link href='#'>
                 <Image src='/Logo.svg' width={120} height={100} alt='Scriptly logo featuring an image of a pen and text reading Scriptly.' />
             </Link>
-            <nav className='flex gap-3'>
+            <nav className='flex gap-5'>
                 <ul className='items-center hidden sm:flex gap-5'>
                     {navLinks.map((link)=>(
                         <li key={link.id}>
-                            <Link href={link.href}>{link.name}</Link>
+                             <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-sky-500 ${activeLink === link.name ? 'text-sky-500' : 'text-stone-500'}`} href={link.href}>{link.name} /</Link>
                         </li>
                     ))}
                 </ul>
                 <aside className='flex items-center gap-2'>
                     <div className='hidden md:flex items-center gap-2'>
                         <LoginButton mode='login'>
-                            <Button variant='ghost' className='text-stone-500 text-md'>Login</Button>
+                            <Button variant='ghost' className='text-indigo-500 text-md'>Login</Button>
                         </LoginButton>
 
                         <LoginButton mode='register'>
-                            <Button>Register</Button>
+                            <Button className='bg-sky-600 text-white font-bold'>Register</Button>
                         </LoginButton>
                     </div>
                     <MobileNav />
