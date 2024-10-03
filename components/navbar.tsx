@@ -22,7 +22,7 @@ const NavigationBar = () => {
     });
 
   return (
-    <motion.header className='fixed top-0 left-0 right-0 p-3 md:px-11 lg:px-20'>
+    <motion.header className='fixed top-0 left-0 right-0 p-3 md:px-11 lg:px-20 z-50'>
         <motion.div
          variants={{
             initial: { backgroundColor: 'rgba(255,255,255,0)' },
