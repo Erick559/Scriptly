@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="h-full w-full dark:bg-black bg-blue-600 dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-blue-600 [mask-image:radial-gradient(ellipse_at_center,transparent_1%,black_70%)]"></div>
-        <div className='flex flex-col items-center justify-center z-20 gap-10'>
+        <div className='flex flex-col items-center justify-center z-20 gap-10 p-5'>
           <div className = 'bg-blue-400 bg-opacity-70 backdrop-blur-lg rounded-full py-2 px-10'>
             <p className='text-white text-sm font-medium'>✨ Writing made easy</p>
           </div>
