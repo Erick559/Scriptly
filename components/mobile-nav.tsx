@@ -11,7 +11,7 @@ const MobileNav = () => {
   return (
     <Sheet>
         <SheetTrigger className='md:hidden'>
-            <MenuIcon className='w-7 h-7' />
+            <MenuIcon className='w-8 h-8 text-yellow-300' />
         </SheetTrigger>
         <SheetContent>
             <SheetHeader className='mt-10'>
