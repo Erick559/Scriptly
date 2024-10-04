@@ -32,9 +32,15 @@ const NavigationBar = () => {
         animate={scrolling ? "scrolling" : "initial"}
         transition={{duration: 0.3, ease: 'easeInOut'}}
         className='flex items-center justify-between p-5 lg:p-7'>
+            {!scrolling ? 
+            <Link href='#'>
+                <Image src='/Logo-White.svg' width={120} height={100} alt='Scriptly logo featuring an image of a pen and text reading Scriptly.' />
+            </Link>    
+            :
             <Link href='#'>
                 <Image src='/Logo.svg' width={120} height={100} alt='Scriptly logo featuring an image of a pen and text reading Scriptly.' />
             </Link>
+}
             <nav className='flex gap-5'>
                 <ul className='items-center hidden sm:flex gap-5'>
                     {navLinks.map((link)=>(
