@@ -41,7 +41,7 @@ const Hero = () => {
         <div className='flex flex-col items-center justify-center z-20 gap-5 px-2 lg:px-6'>
           <div className='flex flex-col items-center justify-center z-20 gap-8 px-2 relative'>
             <div className = 'bg-blue-400 bg-opacity-70 backdrop-blur-lg rounded-full py-2 px-10 xl:py-3 xl:px-12'>
-              <p className='text-white text-sm xl:text-md font-medium'>✨ Writing made easy</p>
+              <p className='text-black font-bold text-sm xl:text-md'>✨ Writing made easy</p>
             </div>
             <div className='flex flex-col items-center justify-center gap-3 p-2 z-10'>
               <h1 className='text-white text-4xl sm:text-6xl md:text-7xl font-black text-center xl:w-[20ch]'>
