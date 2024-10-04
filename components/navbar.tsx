@@ -26,7 +26,7 @@ const NavigationBar = () => {
         <motion.div
          variants={{
             initial: { backgroundColor: 'rgba(255,255,255,0)' },
-            scrolling: { backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(10px)', marginTop: '20px',borderRadius:'10px',boxShadow:'0px 0px 10px 0px rgba(0,0,0,0.1)',padding:'25px',border:'1px solid rgba(0,0,0,0.1)'}
+            scrolling: { backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(10px)', marginTop: '10px',borderRadius:'10px',boxShadow:'0px 0px 10px 0px rgba(0,0,0,0.1)',padding:'10px',border:'1px solid rgba(0,0,0,0.1)'}
         }}
         initial="initial"
         animate={scrolling ? "scrolling" : "initial"}
