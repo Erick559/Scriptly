@@ -16,7 +16,7 @@ const LoginButton = ({children,mode='register',asChild,className}:LoginButtonPro
     }
 
     return (
-        <span onClick={onClick} className="cursor-pointer">
+        <span onClick={onClick} className={`cursor-pointer ${className}`}>
             {children}
         </span>
     )
