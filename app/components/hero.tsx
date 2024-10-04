@@ -1,8 +1,13 @@
+'use client'
 import LoginButton from '@/components/auth/login-button'
-import { Button } from '@/components/ui/button'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
+  const underlineVariant = {
+    initial: {width: '0%',transition:{duration:0.5,ease:'easeInOut'}},
+    hover: {width: '100%',backgroundColor:'white',transition:{duration:0.5,ease:'easeInOut'}},
+  }
   return (
     <section className='h-screen w-full flex flex-col justify-center items-center bg-blue-600'>
       <div className="h-full w-full dark:bg-black bg-blue-600 dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex items-center justify-center">
@@ -17,9 +22,14 @@ const Hero = () => {
               Write your documents easily with Scriptly. 
             </h1>
             <p className='text-stone-300 text-md text-center w-[30ch]'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
-            <Button className='bg-yellow-300 text-black px-10 rounded-lg font-bold mt-5 hover:bg-yellow-500 hover:text-white'>
-              <LoginButton>Get Started Today!</LoginButton>   
-            </Button>
+            <motion.div initial='initial' whileHover='hover' animate='initial' className='bg-yellow-300 text-black px-10 py-3 rounded-lg font-bold mt-5 hover:bg-stone-900 hover:text-white transition-all duration-300 cursor-pointer'>
+              <LoginButton className='relative group'>
+                <motion.span
+                variants={underlineVariant}
+                  className='w-7 h-[2px] bg-black absolute left-0 right-0 bottom-0'></motion.span>
+                Get Started Today!
+              </LoginButton>   
+            </motion.div>
           </div>
         </div>
       </div>
