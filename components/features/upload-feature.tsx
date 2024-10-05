@@ -11,7 +11,7 @@ const UploadFeature = () => {
   return (
     <div className='flex flex-col gap-5 xl:gap-16 md:flex-row px-5 sm:px-10 lg:px-24 xl:px-72'>
         <div className='flex flex-col gap-2 items-center flex-1 md:items-start justify-center'>
-            <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-600'>Upload your Word Document</h2>
+            <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-600 text-center md:text-left'>Upload your Word Document</h2>
             <p className='text-lg text-center md:text-left w-[30ch]'>Our AI model will then rewrite your document in a way that is more engaging and easier to understand.</p>
         </div>
 

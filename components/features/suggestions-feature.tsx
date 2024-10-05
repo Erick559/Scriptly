@@ -66,7 +66,7 @@ const SuggestionsFeature = () => {
   return (
     <div className='flex flex-col gap-5 md:gap-16 md:flex-row px-5 sm:px-10 lg:px-24 xl:px-72'>
         <div className='flex flex-col gap-2 items-center md:items-start flex-1 justify-center order-1 md:order-2'>
-            <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-600 '>Recieve Grammar Suggestions</h2>
+            <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-600 text-center md:text-left'>Recieve Grammar Suggestions</h2>
             <p className='text-lg text-center md:text-left w-[30ch]'>Our AI model will provide you with grammar suggestions for your document.</p>
         </div>
 
