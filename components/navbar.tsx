@@ -25,12 +25,11 @@ const NavigationBar = () => {
     <motion.header className='fixed top-0 left-0 right-0 z-50'>
         <motion.div
          variants={{
-            initial: { backgroundColor: 'rgba(255,255,255,0)' },
-            scrolling: { backgroundColor: 'rgba(255,255,255,0.95)',boxShadow:'0px 0px 10px 0px rgba(0,0,0,0.1)',border:'1px solid rgba(0,0,0,0.1)'}
+            initial: { backgroundColor: 'rgba(255,255,255,0)'},
+            scrolling: { backgroundColor: 'rgba(255,255,255,0.95)',boxShadow:'0px 0px 10px 0px rgba(0,0,0,0.1)',border:'1px solid rgba(0,0,0,0.1)',transition: {duration: 0.3, ease: 'easeInOut'}}
         }}
         initial="initial"
         animate={scrolling ? "scrolling" : "initial"}
-        transition={{duration: 0.3, ease: 'easeInOut'}}
         className='flex items-center justify-between p-5 lg:p-7'>
             {!scrolling ? 
             <Link href='#'>
@@ -45,7 +44,7 @@ const NavigationBar = () => {
                 <ul className='items-center hidden sm:flex gap-5'>
                     {navLinks.map((link)=>(
                         <li key={link.id}>
-                            <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-white'} ${scrolling ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>{link.name} /</Link>
+                            <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-stone-500'} ${scrolling && activeLink !== link.name ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>{link.name} /</Link>
                         </li>
                     ))}
                 </ul>
