@@ -47,7 +47,7 @@ const Hero = () => {
               <h1 className='text-white text-4xl sm:text-6xl md:text-7xl font-black text-center xl:w-[20ch]'>
                 Write your documents easily with Scriptly. 
               </h1>
-              <p className='text-stone-300 text-md xl:text-xl text-center w-[30ch sm:w-[35ch] xl:w-[40ch]'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
+              <p className='text-stone-100 text-md xl:text-xl text-center w-[30ch sm:w-[35ch] xl:w-[40ch]'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
               <motion.div initial='initial' whileHover='hover' animate='initial' className='bg-yellow-300 text-black px-10 py-3 rounded-lg font-bold mt-5 hover:bg-stone-900 hover:text-white transition-all duration-300 cursor-pointer'>
                 <LoginButton className='relative group'>
                   <motion.span
