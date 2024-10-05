@@ -1,11 +1,10 @@
 import React from 'react';
-import LoginButton from "@/components/auth/login-button";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import dynamic from 'next/dynamic';
 import { Manrope } from "next/font/google";
-import { SocialIcon } from 'react-social-icons'
 import NavigationBar from "@/components/navbar";
 import Hero from './components/hero';
+
+const Features = dynamic(() => import('./components/features'), { ssr: false });
 
 const manrope = Manrope({weight:['300','400','700'],subsets:['latin']});
 
@@ -15,6 +14,7 @@ export default function Home() {
       <NavigationBar />
       <main className = {`${manrope.className}`}>
         <Hero />
+        <Features />
       </main>
     </>
   );
