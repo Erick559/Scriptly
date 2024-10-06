@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import { Manrope } from "next/font/google";
 import NavigationBar from "@/components/navbar";
 import Hero from './components/hero';
+import Footer from '@/components/footer';
 
 const Features = dynamic(() => import('./components/features'), { ssr: false });
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Features />
       </main>
+      <Footer />
     </>
   );
 }
