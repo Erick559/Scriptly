@@ -4,6 +4,7 @@ import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 import { Button } from '@/components/ui/button'
+import AnimatedButton from '@/components/animated-button'
 
 
 const CallToAction = () => {
@@ -21,9 +22,7 @@ const CallToAction = () => {
             <p className='text-lg sm:text-xl lg:text-2xl text-center w-[30ch]'>Sign up for free and start writing your word documents easily</p>
         </div>
         <div>
-            <Button size='lg'>
-                Sign Up For Free
-            </Button>
+            <AnimatedButton>Sign Up For Free</AnimatedButton>
         </div>
         <div className='absolute top-16 -left-14 sm:-left-32 md:-left-40 lg:-left-20 xl:left-0'>
             <motion.img src='/spring.png' alt='3d spring' width={500} height={500} className='w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] xl:w-[300px] xl:h-[300px]' style={{translateY}} />
