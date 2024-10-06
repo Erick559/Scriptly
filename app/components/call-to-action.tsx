@@ -16,7 +16,7 @@ const CallToAction = () => {
 
     const translateY  = useTransform(scrollYProgress, [0,1], [150,-150]);
   return (
-    <section ref={sectionRef} className='py-20 md:py-32 lg:py-44 flex flex-col justify-center items-center gap-7 bg-gradient-to-b from-white via-white to-blue-500 relative'>
+    <section ref={sectionRef} className='py-20 md:py-32 lg:py-44 flex flex-col justify-center items-center gap-7 bg-gradient-to-b from-white via-white to-blue-600 relative'>
         <div className='flex flex-col gap-3 items-center z-10'>
             <p className='text-3xl sm:text-5xl lg:text-7xl font-bold text-stone-700'>Ready To Try Scriptly?</p>
             <p className='text-lg sm:text-xl lg:text-2xl text-center w-[30ch] text-stone-600 font-semibold'>Sign up for free and start writing your word documents easily</p>
