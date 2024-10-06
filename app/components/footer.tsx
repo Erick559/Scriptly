@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='flex flex-col gap-2 sm:flex-row justify-between items-center border-t border-white py-4 px-2 sm:px-5 mt-6'>
+      <div className='flex flex-col gap-2 sm:flex-row justify-between items-center border-t border-stone-400 py-4 px-2 sm:px-5 mt-6'>
         <p className='text-white text-sm md:text-base'>© 2024 Scriplty. All rights reserved.</p>
         <Link className='text-white text-sm md:text-base underline' href="https://www.kungu.xyz" target='_blank'>Made with ❤️ by Kungu</Link>
       </div>
