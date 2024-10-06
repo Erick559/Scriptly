@@ -15,24 +15,6 @@ const Hero = () => {
     initial: {width: '0%',transition:{duration:0.5,ease:'easeInOut'}},
     hover: {width: '100%',backgroundColor:'white',transition:{duration:0.5,ease:'easeInOut'}},
   }
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true, 
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  };
-
-  const easyTypingOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: easyTypingAnimationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
   return (
     <section className='min-h-screen w-full flex flex-col justify-center items-center bg-blue-600 pt-24 md:pt-36'>
       <div className="h-full w-full dark:bg-black bg-blue-600 dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex items-center justify-center">
