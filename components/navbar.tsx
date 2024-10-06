@@ -44,7 +44,7 @@ const NavigationBar = () => {
                 <ul className='items-center hidden sm:flex gap-5'>
                     {navLinks.map((link)=>(
                         <li key={link.id}>
-                            <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-stone-500'} ${scrolling && activeLink !== link.name ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>[{link.name}]</Link>
+                            <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-stone-500'} ${scrolling && activeLink !== link.name ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>[ {link.name} ]</Link>
                         </li>
                     ))}
                 </ul>
