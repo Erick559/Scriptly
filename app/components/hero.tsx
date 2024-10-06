@@ -7,32 +7,11 @@ import LoginButton from '@/components/auth/login-button'
 import animationData from '@/assets/Typing-animation.json';
 import easyTypingAnimationData from '@/assets/easy-typing.json';
 import Image from 'next/image';
+import AnimatedButton from '@/components/animated-button';
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 
 const Hero = () => {
-  const underlineVariant = {
-    initial: {width: '0%',transition:{duration:0.5,ease:'easeInOut'}},
-    hover: {width: '100%',backgroundColor:'white',transition:{duration:0.5,ease:'easeInOut'}},
-  }
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true, 
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  };
-
-  const easyTypingOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: easyTypingAnimationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  }
   return (
     <section className='min-h-screen w-full flex flex-col justify-center items-center bg-blue-600 pt-24 md:pt-36'>
       <div className="h-full w-full dark:bg-black bg-blue-600 dark:bg-grid-white/[0.2] bg-grid-white/[0.2] relative flex items-center justify-center">
@@ -48,14 +27,7 @@ const Hero = () => {
                 Write your documents easily with Scriptly. 
               </h1>
               <p className='text-stone-100 text-md xl:text-xl text-center w-[30ch sm:w-[35ch] xl:w-[40ch]'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
-              <motion.div initial='initial' whileHover='hover' animate='initial' className='bg-yellow-300 text-black px-10 py-3 rounded-lg font-bold mt-5 hover:bg-stone-900 hover:text-white transition-all duration-300 cursor-pointer'>
-                <LoginButton className='relative group'>
-                  <motion.span
-                  variants={underlineVariant}
-                    className='w-7 h-[2px] bg-black absolute left-0 right-0 bottom-0'></motion.span>
-                  Get Started Today!
-                </LoginButton>   
-              </motion.div>
+              <AnimatedButton>Get Started Today!</AnimatedButton>
             </div>
             <div className='w-full md:w-[30%] block md:absolute bottom-0 right-0 xl:top-50 z-0'>
               <Lottie animationData={animationData} height="100%" width="100%" />
