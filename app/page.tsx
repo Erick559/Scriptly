@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic';
 import { Manrope } from "next/font/google";
 import NavigationBar from "@/components/navbar";
 import Hero from './components/hero';
-import Testimonial from './components/testimonials';
 
 const Features = dynamic(() => import('./components/features'), { ssr: false });
 const CallToAction = dynamic(() => import('./components/call-to-action'), { ssr: false });
 const Footer = dynamic(() => import('./components/footer'), { ssr: false });
+const Testimonials = dynamic(() => import('./components/testimonials'), { ssr: false });
 
 const manrope = Manrope({weight:['300','400','700'],subsets:['latin']});
 
@@ -18,7 +18,7 @@ export default function Home() {
       <main className = {`${manrope.className}`}>
         <Hero />
         <Features />
-        <Testimonial />
+        <Testimonials />
         <CallToAction />
       </main>
       <Footer />
