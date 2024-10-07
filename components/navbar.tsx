@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 import LoginButton from './auth/login-button'
 import { useState } from 'react';
 import MobileNav from './mobile-nav';
-import navLinks from '@/constants';
+import {navLinks} from '@/constants';
 
 const NavigationBar = () => {
     const [activeLink,setActiveLink] = useState('home');
@@ -42,9 +42,9 @@ const NavigationBar = () => {
 }
             <nav className='flex gap-5'>
                 <ul className='items-center hidden sm:flex gap-5'>
-                    {navLinks.map((link)=>(
+                    {navLinks.map((link)=> (
                         <li key={link.id}>
-                            <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-stone-500'} ${scrolling && activeLink !== link.name ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>[ {link.name} ]</Link>
+                          <Link onClick={()=>setActiveLink(link.name)} className={`hover:text-stone-900 ${activeLink === link.name ? 'text-stone-900' : 'text-stone-500'} ${scrolling && activeLink !== link.name ? 'text-stone-500 hover:text-stone-900' : 'text-white'}`} href={link.href}>[ {link.name} ]</Link>
                         </li>
                     ))}
                 </ul>

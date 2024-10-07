@@ -3,7 +3,7 @@ import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger 
 import { MenuIcon } from 'lucide-react'
 import { Button } from './ui/button'
 import Image from 'next/image'
-import navLinks from '@/constants'
+import {navLinks} from '@/constants'
 import Link from 'next/link'
 import LoginButton from './auth/login-button'
 
