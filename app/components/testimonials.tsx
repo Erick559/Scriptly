@@ -52,7 +52,7 @@ const Testimonial = () => {
 
             <div className='mt-14 flex flex-col gap-2'>
                 <h1 className='text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-stone-900'>What our users say</h1>
-                <h2 className='text-center text-lg md:text-2xl text-stone-500'>Our users are our priority,<br /> and we value their feedback.</h2>
+                <h2 className='text-center text-lg md:text-2xl text-stone-500 text-style'>Our users are our priority,<br /> and we value their feedback.</h2>
             </div>
 
             <div className='h-[700px] flex gap-6 justify-center mt-14 overflow-hidden [mask-image:linear-gradient(transparent,white,white,transparent)]'>

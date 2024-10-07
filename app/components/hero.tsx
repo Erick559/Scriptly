@@ -26,7 +26,7 @@ const Hero = () => {
               <h1 className='text-white text-4xl sm:text-6xl md:text-7xl font-black text-center xl:w-[20ch]'>
                 Write your documents easily with Scriptly. 
               </h1>
-              <p className='text-stone-100 text-md xl:text-xl text-center w-[30ch sm:w-[35ch] xl:w-[40ch]'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
+              <p className='text-stone-100 text-md xl:text-xl text-center w-[30ch sm:w-[35ch] xl:w-[40ch] text-style'>Scriptly has AI capabilities that allow you to write your documents fast and easily. Try it out now, It&apos;s free!</p>
               <AnimatedButton>Get Started Today!</AnimatedButton>
             </div>
             <div className='w-full md:w-[30%] block md:absolute bottom-0 right-0 xl:top-50 z-0'>

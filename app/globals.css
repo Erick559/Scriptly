@@ -105,4 +105,8 @@
         width: 500px;
       }
     }
+
+    .text-style {
+      @apply leading-relaxed tracking-wide;
+    }
   }

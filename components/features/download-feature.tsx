@@ -11,7 +11,7 @@ const DownloadFeature = () => {
     <div className='flex flex-col gap-5 xl:gap-16 md:flex-row px-5 sm:px-10 lg:px-24 xl:px-72'>
         <div className='flex flex-col gap-2 items-center flex-1 md:items-start justify-center'>
             <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-600 text-center md:text-left'>Now Download Your Document</h2>
-            <p className='text-lg text-center md:text-left w-[30ch]'>After editing your document is now ready to download. Download it in word format.</p>
+            <p className='text-lg text-center md:text-left w-[30ch] text-style'>After editing, your document is now ready to download. Download it in word format.</p>
         </div>
 
         <div className='flex-1'>
