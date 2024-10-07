@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='w-full hidden md:block'>
-            <Image src='/documet-preview.png' alt='document-preview' width={1200} height={720} className='rounded-lg shadow-lg' />
+            <Image loading='eager' src='/documet-preview.png' alt='document-preview' width={1200} height={720} className='rounded-lg shadow-lg' />
           </div>
         </div>
       </div>
