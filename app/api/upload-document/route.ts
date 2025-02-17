@@ -62,7 +62,7 @@ export async function POST(req:Request){
             }
         })
 
-        return NextResponse.json({ message: "File Uploaded Succesfully", documentId: uploadedDocument.document_id, status: 200 });
+        return NextResponse.json({ message: "File Uploaded Successfully", documentId: uploadedDocument.document_id, status: 200 });
     } catch (error) {
         console.error('Error processing document:', error);
         return NextResponse.json({ message: "Error processing document" ,status: 500});
@@ -72,7 +72,7 @@ export async function POST(req:Request){
 
 async function rewriteWithOpenAI(markdown: string): Promise<string> {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model:"gpt-3.5-turbo",
       messages: [
         {
           role: "system",
